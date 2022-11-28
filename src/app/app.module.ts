@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewNewsComponent } from './view-news/view-news.component';
+import { NewsNavbarComponent } from './news-navbar/news-navbar.component';
 
 const myRoute: Routes =[
   {
@@ -16,7 +17,8 @@ const myRoute: Routes =[
 @NgModule({
   declarations: [
     AppComponent,
-    ViewNewsComponent
+    ViewNewsComponent,
+    NewsNavbarComponent
   ],
   imports: [
     BrowserModule,
