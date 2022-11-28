@@ -18,7 +18,8 @@ const myRoute: Routes =[
   declarations: [
     AppComponent,
     ViewNewsComponent,
-    NewsNavbarComponent
+    NewsNavbarComponent,
+
   ],
   imports: [
     BrowserModule,
