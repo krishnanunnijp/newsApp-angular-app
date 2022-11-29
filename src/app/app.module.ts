@@ -6,11 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewNewsComponent } from './view-news/view-news.component';
 import { NewsNavbarComponent } from './news-navbar/news-navbar.component';
+import { AddNewsComponent } from './add-news/add-news.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute: Routes =[
   {
     path:"",
     component: ViewNewsComponent
+  },  {
+    path:"add",
+    component: AddNewsComponent
   }
 ]
 
@@ -19,12 +24,14 @@ const myRoute: Routes =[
     AppComponent,
     ViewNewsComponent,
     NewsNavbarComponent,
+    AddNewsComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
