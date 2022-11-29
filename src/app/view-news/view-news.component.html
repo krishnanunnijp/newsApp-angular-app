@@ -1,9 +1,18 @@
+<app-news-navbar></app-news-navbar>
 <div class="container">
     <div class="row">
+
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
             <div class="row g-3 mt-4">
+<!-- As a heading -->
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Total Result:  {{data.totalResults}}</span>
+    </div>
+  </nav>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" *ngFor="let i of data.articles" >
-                    <div class="card mb-3" >
+                    <div class="card mb-3"otal >
                         <img src="{{i.urlToImage}}" height="300px" class="card-img-top" alt="...">
                          <div class="card-img-overlay">
                             <h5 class="card-title text-danger">{{i.source.name}}</h5>
