@@ -1,0 +1,46 @@
+<app-news-navbar></app-news-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h3>News Publish </h3>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Author</label>
+                    <input name="author" [(ngModel)]="author"  type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">title</label>
+                    <input name="title" [(ngModel)]="title" type="text" type="text" class="form-control">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">description</label>
+                    <textarea name="description" [(ngModel)]="description" id="" cols="8"  class="form-control"></textarea>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Url</label>
+                    <input name="url" [(ngModel)]="url"  type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Image</label>
+                    <input name="urlToImage" [(ngModel)]="urlToImage"  type="file" class="form-control">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">content</label>
+                    <textarea name="content" [(ngModel)]="content" id="" cols="30"  class="form-control"></textarea>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <a (click)="newsAdd()" class="btn btn-warning">Publish</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
